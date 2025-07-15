@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
     return (
-        <section id="about" className="w-full min-h-screen bg-[#0a192f] text-gray-300 px-6 py-16 sm:px-16">
+        <section id="about" className="w-full min-h-screen text-gray-300 px-6 py-16 sm:px-16">
             <div className="max-w-5x1 mx-auto flex flex-col sm:flex-row items-start gap-10">
                 {/* Section Title */}
                 <div className="sm:w-1/3">
