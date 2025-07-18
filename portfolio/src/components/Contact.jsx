@@ -13,7 +13,7 @@ function Contact() {
                 </p>
 
                 {/* Email Link */}
-                <a href="mailto:madsfield17@gmail.com" className="mt-8 inline-block border border-green-400 text-green-400 px-6 py-2 rounded hover:bg-green-400 hover:text-[#0a192f] transition duration-300">Say Hello</a>
+                <a href="mailto:madsfield17@gmail.com" className="mt-8 inline-block border border-green-400 text-green-400 px-6 py-2 rounded hover:bg-green-400 hover:text-[#0f172a] transition duration-300">Say Hello</a>
             </div>
         </section>
     );

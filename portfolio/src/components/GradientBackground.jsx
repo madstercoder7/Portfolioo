@@ -21,7 +21,14 @@ const GradientBackground = () => {
     }, []);
 
     return (
-        <div ref={gradientRef} className="fixed inset-0 z-0 pointer-events-none" style={{background: `radial-gradient(600px circle at var(--x, 50%) var(--y, 50%), rgba(56, 189, 248, 0.15), transparent 90%)`, transition: "background 0.2s ease",}}/>
+        <div
+            ref={gradientRef}
+            className="pointer-events-none fixed inset-0 z-30 transition duration-300 lg:absolute"
+            style={{
+                background: `radial-gradient(600px at var(--x, 50%) var(--y, 50%), rgba(29, 78, 216, 0.15), transparent 80%)`,
+                transition: "background 0.2s ease",
+            }}
+        />
     );
 };
 

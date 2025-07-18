@@ -15,22 +15,27 @@ const Navigation = ({ scrollRef }) => {
         if (!scrollEl) return;
 
         const handleScroll = () => {
-            let currentSection = "about";
+            let maxVisible = 0;
+            let mostVisibleSection = "about";
 
             navItems.forEach((item) => {
                 const section = document.getElementById(item.id);
                 if (section) {
                     const rect = section.getBoundingClientRect();
-                    const top = rect.top - scrollEl.getBoundingClientRect().top;
-                    const height = rect.height;
+                    const scrollRect = scrollEl.getBoundingClientRect();
 
-                    if (top <= scrollEl.clientHeight / 2 && top + height >= scrollEl.clientHeight / 2) {
-                        currentSection = item.id;
+                    const visibleTop = Math.max(rect.top, scrollRect.top);
+                    const visibleBottom = Math.min(rect.bottom, scrollRect.bottom);
+                    const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+
+                    if (visibleHeight > maxVisible) {
+                        maxVisible = visibleHeight;
+                        mostVisibleSection = item.id;
                     }
                 }
             });
 
-            setActive(currentSection);
+            setActive(mostVisibleSection);
         };
 
         scrollEl.addEventListener("scroll", handleScroll);
@@ -39,9 +44,13 @@ const Navigation = ({ scrollRef }) => {
         return () => scrollEl.removeEventListener("scroll", handleScroll);
     }, [scrollRef]);
 
+
     return (
         <nav className="mt-10 space-y-6">
-            {navItems.map((item) => (
+            {navItems.map((item) => {
+                const isActive = active === item.id;
+                
+                return(
                 <a
                     key={item.id}
                     href={`#${item.id}`}
@@ -50,22 +59,23 @@ const Navigation = ({ scrollRef }) => {
                 >
                     <span
                         className={`transition-all duration-300 ${
-                            active === item.id
-                                ? "w-8 h-[2px] bg-white"
-                                : "w-6 h-[1px] bg-gray-500"
+                            isActive
+                                ? "w-16 h-[2px] bg-white"
+                                : "w-12 h-[1px] bg-gray-500 group-hover:w-8 group-hover:bg-white"
                         }`}
                     />
                     <span
                         className={`transition-all duration-300 ${
-                            active === item.id
-                                ? "text-white text-base font-bold scale-105"
-                                : "text-gray-500 text-sm group-hover:text-white"
+                            isActive
+                                ? "text-white text-base font-bold scale-110"
+                                : "text-gray-500 text-sm group-hover:text-white group-hover:scale-110"
                         }`}
                     >
                         {item.label}
                     </span>
                 </a>
-            ))}
+                )
+            })}
         </nav>
     );
 };
