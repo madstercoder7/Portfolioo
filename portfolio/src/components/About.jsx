@@ -2,17 +2,12 @@ import React from "react";
 
 function About() {
     return (
-        <section id="about" className="w-full min-h-screen text-gray-300 px-6 py-16 sm:px-16">
-            <div className="max-w-5x1 mx-auto flex flex-col sm:flex-row items-start gap-10">
-                {/* Section Title */}
-                <div className="sm:w-1/3">
-                    <h2 className="text-3x1 sm:text-4x1 font-bold text-white border-b-2 border-green-400 inline-block mb-4">About Me</h2>
-                </div>
-
-                {/* Text Content */}
-                <div className="sm:w-2/3 space-y-4 text-sm sm:text-base leading-relaxed">
-                    <p>I enjoy building clean, user-centric interfaces and tools that prioritize content over clutter. I love working with modern web technologies and exploring new ideas through code.</p>
-                </div>
+        <section id="about" className="mb-16 scroll-mt-16 md:md-24 lg:mb-36 lg:scroll-mt-24" aria-label="About Me">
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+            </div>
+            <div>
+                <p className="mb-4">About text</p>
             </div>
         </section>
     );
