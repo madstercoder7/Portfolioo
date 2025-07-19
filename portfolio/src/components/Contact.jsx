@@ -14,8 +14,8 @@ function Contact() {
         </section> */
 
         <section id="contact" className="mb-16 scroll-mt-16 md:md-24 lg:mb-36 lg:scroll-mt-24" aria-label="Contact">
-            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Contact</h2>
+            <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-100">
+                <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">Contact</h2>
             </div>
             <div className="max-x-2x1 mx-auto text-center">
                 <p className="mt-4 text-sm sm:text-base leading-relaxed text-gray-400">I'm always open to connecting, collaborating or just chatting about programming or any other things.
