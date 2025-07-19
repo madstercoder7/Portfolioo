@@ -29,7 +29,7 @@ function Projects() {
                     <h3 className="text-x1 font-bold text-white">Stashd</h3>
                     <p className="text-sm text-green-400 mb-2">Personal Expense and Savings Tracker</p>
                     <p className="text-sm sm:text-base leading-relaxed mb-4">Stashd is a web application that helps you master your money, achieve your savings goals, and most importantly help keep your pockets "Stashd!"</p>
-                    <a href="https://genproject.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline text-sm">View on Github →</a>                        
+                    <a href="https://stashd.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline text-sm">View on Github →</a>                        
                 </div>
             </div>
         </section>
