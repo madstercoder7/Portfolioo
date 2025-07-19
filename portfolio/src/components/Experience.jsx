@@ -7,7 +7,7 @@ function Experience() {
                 <h2 className="text-sm font-bold uppercase tracking-widest text-slate-200">Experience</h2>
             </div>
             <div>
-                <p className="mb-4">Experience text</p>
+                <p className="mb-4">In search of finding my first! Please contact if you have any opportunities for me</p>
             </div>
         </section>
     );
