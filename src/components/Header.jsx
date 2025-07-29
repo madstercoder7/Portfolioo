@@ -31,11 +31,12 @@ export function useActiveSection(sectionIds) {
 }
 
 function Header() {
-    const activeSection = useActiveSection(["about", "experience", "projects", "contact"]);
+    const activeSection = useActiveSection(["about", "experience", "techstack", "projects", "contact"]);
 
     const navItems = [
         { id: "about", label: "About" },
         { id: "experience", label: "Experience" },
+        { id: "techstack", label: "Tech Stack"},
         { id: "projects", label: "Projects" },
         { id: "contact", label: "Contact" },
     ];

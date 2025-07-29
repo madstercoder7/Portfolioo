@@ -5,6 +5,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import TechStack from "./components/TechStack";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <main id="content" className="pt-24 lg:w-[52%] lg:py-24">
                     <About />
                     <Experience />
+                    <TechStack />
                     <Projects />
                     <Contact />
                 </main>
