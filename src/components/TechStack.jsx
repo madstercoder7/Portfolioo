@@ -1,6 +1,6 @@
 import {
-  SiHtml5, SiCss3, SiJavascript, SiTypescript,
-  SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs,
+  SiHtml5, SiCss3, SiJavascript,
+  SiReact, SiTailwindcss,
   SiPython, SiFlask, SiGit, SiGithub
 } from "react-icons/si";
 
@@ -8,11 +8,8 @@ const techStack = [
   { name: "HTML", icon: SiHtml5 },
   { name: "CSS", icon: SiCss3 },
   { name: "JavaScript", icon: SiJavascript },
-  { name: "TypeScript", icon: SiTypescript },
   { name: "React", icon: SiReact },
-  { name: "Next.js", icon: SiNextdotjs },
   { name: "Tailwind CSS", icon: SiTailwindcss },
-  { name: "Node.js", icon: SiNodedotjs },
   { name: "Python", icon: SiPython },
   { name: "Flask", icon: SiFlask },
   { name: "Git", icon: SiGit },
@@ -30,16 +27,16 @@ export default function TechStack() {
         <h2 className="text-2xl font-bold tracking-tight text-slate-100 sm:text-3xl">🛠️ Tech Stack</h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {techStack.map((tech, index) => {
           const Icon = tech.icon;
           return (
             <div
               key={index}
-              className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-slate-700 bg-[#0f172a] px-4 py-6 shadow-md transition-transform hover:-translate-y-1 hover:shadow-lg"
+              className="flex flex-col items-center justify-center gap-2 rounded-xl border border-slate-700 bg-[#0f172a] px-4 py-5 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
             >
-              <Icon className="text-4xl text-slate-300" />
-              <span className="text-sm font-medium text-slate-200">{tech.name}</span>
+              <Icon className="text-3xl text-slate-300" />
+              <span className="text-sm font-medium text-slate-200 text-center">{tech.name}</span>
             </div>
           );
         })}
