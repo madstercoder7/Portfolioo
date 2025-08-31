@@ -23,7 +23,7 @@ function Projects() {
                     <h3 className="text-xl font-bold text-white">CryptNest</h3>
                     <p className="text-sm text-green-400 mb-2">Password Manager</p>
                     <p className="text-sm sm:text-base leading-relaxed mb-4">A secure password manager built with Flask. Features include face unlock, password generator, breach detection adn intrusion alerts.</p>
-                    <a href="https://github.com/madstercoder7/CryptNest" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline text-sm">View on Github →</a>                        
+                    <a href="https://cryptnest-oxje.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline text-sm">View on Github →</a>                        
                 </div>
                 <div className="bg-[#112240] p-6 rounded-lg shadow-sm hover:shadow-lg transition">
                     <h3 className="text-xl font-bold text-white">Stashd</h3>
